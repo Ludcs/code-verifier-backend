@@ -1,6 +1,6 @@
 import {BasicResponse} from './types';
 import {IHelloController} from './interfaces';
-import {LogSucces} from '@/utils/logger';
+import {LogSucces} from '../utils/logger';
 
 export class HelloController implements IHelloController {
   public async getMessage(name?: string | undefined): Promise<BasicResponse> {

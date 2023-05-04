@@ -7,7 +7,7 @@
 
 import express, {Request, Response} from 'express';
 import helloRouter from './HelloRouter';
-import {LogInfo} from '@/utils/logger';
+import {LogInfo} from '../utils/logger';
 
 //Instanciar el server:
 let server = express();
@@ -29,4 +29,4 @@ rootRouter.get('/', (req, res) => {
 server.use('/', rootRouter); //para ruta raiz http://localhost:8000/api/
 server.use('/hello', helloRouter); //para ruta http://localhost:8000/api/hello
 
-export default server;
+export default server; //llamado como rootRouter en server/index.ts
