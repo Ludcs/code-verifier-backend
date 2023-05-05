@@ -5,7 +5,7 @@ import helmet from 'helmet'; //for security
 //TODO: HTTPS
 import rootRouter from '../routes'; //importar las rutas
 
-//Creacion de Express App
+//Creacion de Express Server (o tambien llamado App)
 const server: Express = express();
 
 //Definir SERVER para usar "/api" y usar rootRouter desde 'index.ts' de la carpeta routes

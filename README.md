@@ -24,6 +24,12 @@ Node Express Project - Backend
 
 - Webpack dependencies: para empaquetar y minimizar el paquete final.
 
+- CORS: para seguridad
+
+- Helmet: para seguridad
+
+- Mongoose: librería para Node.js que nos permite escribir consultas para una base de datos de MongoDB
+
 ## Scripts:
 
 - "build": buscara el archivo tsconfig y aplicara la configuración establecida en él (version de ES, creacion de carpeta ./dist, etc.).
