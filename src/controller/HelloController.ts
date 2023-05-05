@@ -12,9 +12,7 @@ export class HelloController implements IHelloController {
    * @returns {BasicResponse} Promesa de tipo BasicResponse
    */
   @Get('/')
-  public async getMessage(
-    @Query() name?: string | undefined
-  ): Promise<BasicResponse> {
+  public async getMessage(@Query() name?: string): Promise<BasicResponse> {
     LogSucces('[/api/hello] Get Request');
     return {
       message: `Hello ${name || 'World'}`,
